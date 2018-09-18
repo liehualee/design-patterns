@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+
+  php:
+    image: my-php:7.1.11
+    container_name: my-php-7.1
+    volumes:
+      - .:/codes/design-patterns
+    # 连接成功时，会自动切换到该目录，即项目根目录
+    working_dir: /codes/design-patterns
